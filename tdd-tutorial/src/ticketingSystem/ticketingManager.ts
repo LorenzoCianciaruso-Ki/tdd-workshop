@@ -10,5 +10,15 @@ interface Ticket {
 }
 
 export default class TicketManager {
+
+    tickets: Ticket[]= []
+
+    addTicket(ticket: Ticket){
+        this.tickets = [...this.tickets, ticket]
+    }
+
+    getTickets(){
+        return this.tickets
+    }
     
 }
