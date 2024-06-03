@@ -73,3 +73,7 @@ fizzBuzz(30) => "FizzBuzz"
 ```
 
 <!-- end_slide -->
+
+## A more complex scenario
+
+```https://github.com/Ki-Insurance/ki-pairing-coding-exercise-kotlin```
