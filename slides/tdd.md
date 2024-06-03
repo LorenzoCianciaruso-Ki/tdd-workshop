@@ -48,6 +48,28 @@ calculateSum([4, 8, 1, 4, 6]) => 23
 
 ## Let's try!
 
-Clone https://github.com/LorenzoCianciaruso-Ki/tdd-workshop
+Clone 
+
+```https://github.com/LorenzoCianciaruso-Ki/tdd-workshop```
+
+<!-- end_slide -->
+
+## Another practical example
+
+Test Scenarios:
+
+Print the numbers from 1 to 100. But for multiples of three, print "Fizz” instead of the number and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+
+
+### Example:
+```
+fizzBuzz(1) => "1"
+
+fizzBuzz(3) => "Fizz"
+
+fizzBuzz(5) => "Buzz"
+
+fizzBuzz(30) => "FizzBuzz"
+```
 
 <!-- end_slide -->
