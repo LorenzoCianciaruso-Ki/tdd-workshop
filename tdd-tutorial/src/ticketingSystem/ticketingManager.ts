@@ -6,12 +6,13 @@
 
 interface Ticket {
     id: number,
-    title: string
+    title: string,
+    name?: string
 }
 
 export default class TicketManager {
 
-    tickets: Ticket[]= []
+    tickets: Ticket[] = []
 
     addTicket(ticket: Ticket){
         this.tickets = [...this.tickets, ticket]
@@ -19,6 +20,11 @@ export default class TicketManager {
 
     getTickets(){
         return this.tickets
+    }
+
+    assignTicket(name: string, ticketId: number) {
+        const ticket = this.tickets.find(ticket => ticket.id === ticketId)!
+        ticket.name = name
     }
     
 }

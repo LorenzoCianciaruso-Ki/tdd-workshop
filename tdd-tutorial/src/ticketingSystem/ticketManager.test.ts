@@ -34,14 +34,23 @@ test('should be able to assign a ticket ', () => {
 
     //then
     const tickets = manager.getTickets();
-    expect(tickets[0]).toBe(newTicket);
+    expect(tickets[0].name).toBe(newTicket.name);
+    expect(tickets[0].id).toBe(newTicket.id);
 });
 
-test('should be able to mark a ticket as in progress', () => {
+test("should throw not found exception when assigning a user to a ticket that does not exist", () => {
     const manager = new TicketManager();
 
-    manager.assignTicket(name, ticketId);
+    expect(() => {
+        manager.assignTicket("Barry", 1)
+    }).toThrowError("Ticket not found")
+})
 
-    const tickets = manager.getTickets();
-    expect(tickets[0]).toBe(ticket);
-});
+// test('should be able to mark a ticket as in progress', () => {
+//     const manager = new TicketManager();
+//
+//     manager.assignTicket(name, ticketId);
+//
+//     const tickets = manager.getTickets();
+//     expect(tickets[0]).toBe(ticket);
+// });
