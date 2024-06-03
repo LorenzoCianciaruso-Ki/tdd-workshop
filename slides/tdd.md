@@ -26,4 +26,28 @@ Test Driven Development (TDD) is a software development process that force you t
 
 <!-- end_slide -->
 
+## A practical example
+
+Test Scenarios:
+
+Create a function that takes an array of integers and returns their sum (for an empty array, it will return 0)
+
+
+
+### Example:
+```
+calculateSum([]) => 0
+
+calculateSum([5]) => 5
+
+calculateSum([4, 8]) => 12
+
+calculateSum([4, 8, 1, 4, 6]) => 23
+```
+<!-- end_slide -->
+
 ## Let's try!
+
+Clone https://github.com/LorenzoCianciaruso-Ki/tdd-workshop
+
+<!-- end_slide -->
